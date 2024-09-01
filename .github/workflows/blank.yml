@@ -22,10 +22,11 @@ jobs:
           # Make sure the actual branch is checked out when running on pull requests
           # ref: ${{ github.head_ref }}
       - run: ls -a
+      - run: npm i
       # - name: NPP
-        # run: npx jest
+      # - run: npx jest
       # - name: CI
-        # run: npm run ci
+      - run: npm run ci
 
       # - name: Prettify code
         # uses: creyD/prettier_action@v4.3
