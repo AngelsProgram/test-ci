@@ -14,6 +14,8 @@ jobs:
     steps:
       - name: Test
         run: echo "Command running";
+      - name: Node
+        run: node -v && npm -v
       # - name: Checkout
         # uses: actions/checkout@v3
         # with:
