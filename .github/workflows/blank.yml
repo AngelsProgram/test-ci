@@ -16,12 +16,12 @@ jobs:
         run: echo "Command running";
       - name: Node
         run: node -v && npm -v
-      - run: ls -a
       # - name: Checkout
-        # uses: actions/checkout@v3
+      - uses: actions/checkout@v3
         # with:
           # Make sure the actual branch is checked out when running on pull requests
           # ref: ${{ github.head_ref }}
+      - run: ls -a
       # - name: NPP
         # run: npx jest
       # - name: CI
