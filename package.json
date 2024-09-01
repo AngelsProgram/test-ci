@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "prepare": "npx prettier --write src/",
     "test": "jest",
     "ci": "test"
   },
